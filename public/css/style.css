@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #1a1a1a;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .terminal-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .terminal-header {
+    background-color: #111;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+    gap: 8px;
+    margin-right: 15px;
+  }
+  
+  .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555;
+  }
+  
+  .terminal-button.close {
+    background-color: #ff5f56;
+  }
+  
+  .terminal-button.minimize {
+    background-color: #ffbd2e;
+  }
+  
+  .terminal-button.maximize {
+    background-color: #27c93f;
+  }
+  
+  .terminal-title {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .terminal-body {
+    padding: 20px;
+    height: 500px;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .terminal-line {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .terminal-prompt {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .terminal-text {
+    position: relative;
+  }
+  
+  .terminal-cursor {
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    background-color: #fff;
+    animation: blink 1s step-end infinite;
+  }
+  
+  .terminal-input-container {
+    flex: 1;
+  }
+  
+  .terminal-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    outline: none;
+    caret-color: transparent;
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
